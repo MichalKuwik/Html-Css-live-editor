@@ -35,6 +35,20 @@ const setEditor = () => {
     highlightActiveLine: true,
   })
 
+  //add autocompletion functionality
+  editorc.setOptions({
+    enableBasicAutocompletion: true,  //basic autocompletion
+    // enableSnippets: true,           //thnaks for the snippets
+    enableLiveAutocompletion: true, //live autocompletion
+   });
+
+   //add autocompletion functionality
+  editorh.setOptions({
+    enableBasicAutocompletion: true,  //basic autocompletion
+    // enableSnippets: true,           //thnaks for the snippets
+    enableLiveAutocompletion: true, //live autocompletion
+   });
+
   //on change we update  html iframes to show result
   editorh.getSession().on('change', () => {
     update(); //create update function
