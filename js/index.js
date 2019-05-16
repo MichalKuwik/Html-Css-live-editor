@@ -49,6 +49,10 @@ const setEditor = () => {
     enableLiveAutocompletion: true, //live autocompletion
    });
 
+   editorh.setOption({
+    enableEmmet: true,
+   });
+
   //on change we update  html iframes to show result
   editorh.getSession().on('change', () => {
     update(); //create update function
