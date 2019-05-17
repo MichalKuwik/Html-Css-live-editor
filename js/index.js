@@ -17,7 +17,7 @@ const setEditor = () => {
   window.editorh = ace.edit('htmleditor', {
     theme: "ace/theme/tomorrow_night_eighties",
     mode: "ace/mode/html",
-    maxLines: 30,
+    maxLines: 18,
     wrap: true,
     autoScrollEditorIntoView: true,
     tabSize:1,
@@ -29,7 +29,7 @@ const setEditor = () => {
   window.editorc = ace.edit('csseditor', {
     theme: "ace/theme/tomorrow_night_eighties",
     mode: "ace/mode/css",
-    maxLines: 30,
+    maxLines: 18,
     wrap: true,
     autoScrollEditorIntoView: true,
     tabSize:1,
