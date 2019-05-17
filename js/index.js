@@ -22,6 +22,7 @@ const setEditor = () => {
     autoScrollEditorIntoView: true,
     tabSize:1,
     highlightActiveLine: true,
+    value: '<!--Dodaj ! + tab, aby dodać postawową struktruę html-->',
   })
 
   //css editor
@@ -45,7 +46,7 @@ const setEditor = () => {
    //add autocompletion functionality
   editorh.setOptions({
     enableBasicAutocompletion: true,  //basic autocompletion
-    // enableSnippets: true,           //thnaks for the snippets
+    enableSnippets: true,           //thnaks for the snippets
     enableLiveAutocompletion: true, //live autocompletion
    });
 
